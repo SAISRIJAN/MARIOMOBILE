@@ -91,7 +91,7 @@ else if(gamestate==="end"){
     mario.changeAnimation("collided",mariocollided)
     obstaclegroup.setLifetimeEach(-1)
     brickgroup.setLifetimeEach(-1)
-    if(touches.length>0||mousePressedOver(restart)){
+    if(touches.length>0||mousePressedOver(restart)&&mario.y>400){
         gamestate="play";
         score=0;
         restart.visible=false;
